@@ -5,9 +5,9 @@ Captcha Generator (PHP + GD)
 ```php
 use CodeRider\Captcher
 
-$cap = new CaptchaGenerator(200, 50);
-$captchaImage = $cap->generate();
-$captchaText = $cap->getCaptchaText();
+$captcha = new CaptchaGenerator(200, 50);
+$captchaImage = $captcha->generate();
+$captchaText = $captcha->getCaptchaText();
 ```
 
 *$captchaImage* output:  
@@ -17,3 +17,44 @@ $captchaText = $cap->getCaptchaText();
 ERZ2
 
 ## Custom options
+### Background color
+##### (Default: rgb(255, 255, 255))
+``` php
+$captcha->setBackgroundColor([146,178,135]);
+```
+### Text color
+##### (Default: rgb(0, 0, 0))
+``` php
+$captcha->setTextColor([146,178,135]);
+```
+### Horizontal lines
+##### (Default: true)
+``` php
+$captcha->setHorizontalLines(false);
+```
+### Vertical lines
+##### (Default: true)
+``` php
+$captcha->setVerticalLines(false);
+```
+### Dots (on backgroud)
+##### (Default: true)
+``` php
+$captcha->setDots(false);
+```
+### Text length
+##### (Default: 4)
+###### Notice: Fit text length to image width!
+``` php
+$captcha->setLettersAmount(5);
+```
+### Text length
+##### (Default: 4)
+###### Notice: Case sensitive!
+``` php
+$captcha->setAvailableCharacters('abc012');
+```
+
+
+
+
