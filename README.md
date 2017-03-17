@@ -9,7 +9,7 @@ $captcha = new CaptchaGenerator(200, 50);
 $captchaImage = $captcha->generate();
 $captchaText = $captcha->getCaptchaText();
 ```
-
+#### Output:
 *$captchaImage* output:  
 ![alt tag](https://raw.githubusercontent.com/coderiderpl/Captcher/master/example/captcha-example.jpg)
 
