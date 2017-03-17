@@ -1,6 +1,7 @@
 <?php
 
-use CodeRider\Captcher;
+require_once('../src/Captcher.php');
+use CodeRider\Captcher\Captcher;
 
 $captcha = new Captcher(250, 50);
 $captchaImage = $captcha->generate();
