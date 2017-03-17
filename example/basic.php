@@ -2,7 +2,7 @@
 
 use CodeRider\Captcher;
 
-$captcha = new Generator(250, 50);
+$captcha = new Captcher(250, 50);
 $captchaImage = $captcha->generate();
 $captchaText = $captcha->getCaptchaText();
 
